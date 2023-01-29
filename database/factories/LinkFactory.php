@@ -7,7 +7,6 @@ use App\Models\Link;
 use App\Traits\Factories\HasUser;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-
 /**
  * @extends Factory<Link>
  */
