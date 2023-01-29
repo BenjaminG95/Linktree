@@ -21,11 +21,10 @@ class VisitFactory extends Factory
     public function definition(): array
     {
         $link = $this->getLink();
-        $hasUserAgent = fake()->boolean(50);
 
         return [
             'link_id' => $link->id,
-            'user_agent' => ($hasUserAgent ? 'Google Chrome' : null),
+            'user_agent' => (fake()->boolean(50) ? fake()->text(15) : null),
         ];
     }
 }
